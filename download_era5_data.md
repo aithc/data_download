@@ -20,17 +20,17 @@ The request can be formatted using the interactive form.
 
 The api call must follow the syntax
 
-···python   
+```python   
 import cdsapi
 c = cdsapi.Client()
 
 c.retrieve('dataset-short-names',
             {...sub-selection request...},
             'target-file')
-···
+```
 
 **example**
-···python
+```python
 #!/usr/bin/env python
 import cdsapi
 c = cdsapi.Client()
@@ -45,6 +45,6 @@ c.retrieve("reanalysis-era5-pressure-levels",
         "time": "12:00",
         "format": "grib"
     }, "download.grib")
-···
+```
 
 
